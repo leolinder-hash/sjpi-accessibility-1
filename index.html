@@ -38,6 +38,8 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
         <nav class="navigation">
@@ -61,7 +63,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <button class="button">Read about Lunar</button>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
