@@ -38,27 +38,29 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 </head>
 
 <body>
-    <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
-    <nav class="navigation">
-        <ul>
-            <li class="nav-item"><a href="404.html">Home</a></li>
-            <li class="nav-item"><a href="404.html">World</a></li>
-            <li class="nav-item"><a href="404.html">Sports</a></li>
-            <li class="nav-item"><a href="404.html">Entertainment</a></li>
-        </ul>
-    </nav>
+    <header>
+        <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
+        <nav class="navigation">
+            <ul>
+                <li class="nav-item"><a href="404.html">Home</a></li>
+                <li class="nav-item"><a href="404.html">World</a></li>
+                <li class="nav-item"><a href="404.html">Sports</a></li>
+                <li class="nav-item"><a href="404.html">Entertainment</a></li>
+            </ul>
+        </nav>
 
-    <!-- Svåråtkomligt inputfällt -->
-    <div class="input-container">
-        <label for="search">Search</label>
-        <input type="text" id="search" name="search" placeholder="Enter text">
-    </div>
+        <!-- Svåråtkomligt inputfällt -->
+        <div class="input-container">
+            <label for="search">Search</label>
+            <input type="text" id="search" name="search" placeholder="Enter text">
+        </div>
 
-    <!-- Dold text och klickbar div. 
+        <!-- Dold text och klickbar div. 
      .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
-    <button class="button">Read about Lunar</button>
+        <button class="button">Read about Lunar</button>
+    </header>
 
-    <div class="container">
+    <main class="container">
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
@@ -93,7 +95,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             </video>
             <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="Animated GIF of Tom Hanks waving">
         </div>
-    </div>
+    </main>
 
     <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
 
