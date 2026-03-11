@@ -33,7 +33,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Endast en `<title>` används; flera kan orsaka oväntat beteende och påverka SEO samt tillgänglighet negativt. -->
     <title>A11y News</title>
 </head>
 
@@ -41,7 +40,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
         <nav class="navigation">
             <ul>
                 <li class="nav-item"><a href="404.html">Home</a></li>
@@ -51,24 +49,17 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             </ul>
         </nav>
 
-        <!-- Svåråtkomligt inputfällt -->
         <form class="input-container">
             <label for="search">Search</label>
             <input type="text" id="search" name="search" placeholder="Enter text">
             <button type="submit">Search</button>
         </form>
-
-        <!-- Dold text och klickbar div. 
-     .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
         <button class="button">Read about Lunar</button>
     </header>
 
     <main id="main-content" class="container">
-
-        <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
         <article class="article">
-            <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <h2 class="headline">Breaking News: ...!</h2>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
@@ -76,11 +67,9 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             </p>
         </article>
 
-        <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
         <article class="article">
             <h2>Lunar New Year: Celebrate with us!</h2>
 
-            <!-- Bilder visas inte, varför? -->
             <div class="image-container">
                 <img src="/images/Ocean.png" alt="A image of a blue ocean">
                 <img src="/images/city.png" alt="A image of a city skyline">
@@ -89,9 +78,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <p>Access the news by pressing the images</p>
         </article>
 
-        <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-
-        <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
         <div class="article">
             <video controls>
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -99,9 +85,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="Animated GIF of Tom Hanks waving">
         </div>
     </main>
-
-    <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
-
+    
     <script src="script.js" defer></script>
 </body>
 
