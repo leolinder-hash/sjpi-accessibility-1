@@ -64,17 +64,17 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
-        <div class="article">
+        <article class ="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <h2 class="headline">Breaking News: ...!</h2>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.
             </p>
-        </div>
+        </article>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
-        <div class="article" onclick="alert('This does nothing!')">
+        <article class="article">
             <div>Lunar New Year: Celebrate with us!</div>
 
             <!-- Bilder visas inte, varför? -->
@@ -84,7 +84,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
                 <img src="/images/family.png" alt="A image of a happy looking family">
             </div>
             <p>Access the news by pressing the images</p>
-        </div>
+        </article>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
 
