@@ -50,10 +50,11 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         </nav>
 
         <!-- Svåråtkomligt inputfällt -->
-        <div class="input-container">
+        <form class="input-container">
             <label for="search">Search</label>
             <input type="text" id="search" name="search" placeholder="Enter text">
-        </div>
+            <button type="submit">Search</button>
+        </form>
 
         <!-- Dold text och klickbar div. 
      .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
@@ -64,7 +65,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
-        <article class ="article">
+        <article class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <h2 class="headline">Breaking News: ...!</h2>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
