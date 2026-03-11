@@ -58,13 +58,12 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <!-- Dold text och klickbar div. 
      .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
     <p class="hidden-text">This text is invisible.</p>
-    <div class="button">Click here!</div>
+    <button class="button">Click here!</button>
+
     <div class="container">
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
-        <h1></h1>
-
         <div class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <marquee class="headline">Breaking News: ...!</marquee>
@@ -80,19 +79,15 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
             <!-- Bilder visas inte, varför? -->
             <div class="image-container">
-                <img src="/images/ocean.jpg">
-                <img src="/images/city.jpg">
-                <img src="/images/family.jpg">
+                <img src="/images/Ocean.png" alt="A image of a blue ocean">
+                <img src="/images/city.png" alt="A image of a city skyline">
+                <img src="/images/family.png" alt="A image of a happu looking family">
             </div>
 
             <p>Access the news by pressing the images</p>
         </div>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-        <div class="article" style="display: none;">
-            <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="50000">
-        </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
         <div class="article">
