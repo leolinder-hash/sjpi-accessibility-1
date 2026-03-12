@@ -14,6 +14,8 @@ input:focus {
 
 h1 {
   margin-bottom: 2rem;
+  font-size: 3rem;
+  font-style: bold;
 }
 
 .skip-link {
@@ -135,8 +137,8 @@ a {
 .image-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin-top: 1.5rem;
+  gap: 1.5rem;
 }
 
 /* Definierar storleken på bilderna och gör att de täcker det angivna utrymmet utan att bli förvrängda  */
